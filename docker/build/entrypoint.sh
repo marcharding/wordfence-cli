@@ -79,6 +79,7 @@ if [ "$PACKAGE_TYPE" = 'standalone' ]; then
   pyinstaller \
     --name wordfence \
     --onefile \
+    --additional-hooks-dir=. \
     --hidden-import wordfence.cli.configure.configure \
     --hidden-import wordfence.cli.configure.definition \
     --hidden-import wordfence.cli.malwarescan.malwarescan \

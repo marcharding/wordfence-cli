@@ -5,7 +5,9 @@ RUN apt-get update && apt-get install -y \
     python3.8 \
     python3.8-dev \
     python3-pip \
-    libffi-dev
+    libffi-dev \
+    libpcre3 \
+    libvectorscan5
 
 COPY ./docker/build/entrypoint.sh /root/entrypoint.sh
 COPY ./ /root/wordfence-cli
